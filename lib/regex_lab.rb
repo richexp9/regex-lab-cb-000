@@ -23,8 +23,10 @@ def words_five_letters_long(text)
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
-  text.scan(/^[A-Z].*[,\/#!$%\^&\*;:{}=\-_`~()]$/)
-  binding.pry
+  if text.scan(/^[A-Z].*[.,\/#!$%\^&\*;:{}=\-_`~()]$/) != []
+    return true
+  end
+  # binding.pry
 end
 
 first_word_capitalized_and_ends_with_punctuation?(correct_punctuation)
