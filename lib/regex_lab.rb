@@ -1,6 +1,6 @@
 
 
-words_string = "unassuming ambiguous understanding pomp circumstance uninteresting uncompromising grouchy corollary"
+correct_punctuation = "I stepped on a Corn Flake, now I'm a cereal killer."
 
 def starts_with_a_vowel?(word)
   boolean = false
@@ -26,7 +26,9 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
   text.match(/^[A-Z].*[.,\/#!$%\^&\*;:{}=\-_`~()]$/)
 
 end
-puts first_word_capitalized_and_ends_with_punctuation()
+
+puts first_word_capitalized_and_ends_with_punctuation(correct_punctuation)
+
 def valid_phone_number?(phone)
 
 end
