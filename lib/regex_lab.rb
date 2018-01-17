@@ -1,5 +1,5 @@
 
-
+require 'pry'
 correct_punctuation = "I stepped on a Corn Flake, now I'm a cereal killer."
 
 def starts_with_a_vowel?(word)
@@ -24,10 +24,10 @@ end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
   text.scan(/^[A-Z].*[,\/#!$%\^&\*;:{}=\-_`~()]$/)
-
+  binding.pry
 end
 
-puts first_word_capitalized_and_ends_with_punctuation?(correct_punctuation)
+first_word_capitalized_and_ends_with_punctuation?(correct_punctuation)
 
 def valid_phone_number?(phone)
 
