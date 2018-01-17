@@ -34,7 +34,7 @@ end
 first_word_capitalized_and_ends_with_punctuation?(correct_punctuation)
 
 def valid_phone_number?(phone)
-  if phone.scan(/^[0-9]{10}$/) != []
+  if phone.scan(/\d.*\d.*\d.*\d.*\d.*\d.*\d.*\d.*\d.*\d.*/) != []
     return true
   else
     return false
