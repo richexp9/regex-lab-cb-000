@@ -25,6 +25,8 @@ end
 def first_word_capitalized_and_ends_with_punctuation?(text)
   if text.scan(/^[A-Z].*[.,\/#!$%\^&\*;:{}=\-_`~()]$/) != []
     return true
+  else
+    return false
   end
   # binding.pry
 end
